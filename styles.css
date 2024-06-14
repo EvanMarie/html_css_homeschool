@@ -1,0 +1,751 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* COLORS  */
+:root {
+  --one: rgba(252, 241, 230, 1);
+  --one-ten: rgba(252, 241, 230, 0.1);
+  --one-twenty: rgba(252, 241, 230, 0.2);
+  --one-thirty: rgba(252, 241, 230, 0.3);
+  --one-forty: rgba(252, 241, 230, 0.4);
+  --one-fifty: rgba(252, 241, 230, 0.5);
+  --one-sixty: rgba(252, 241, 230, 0.6);
+  --one-seventy: rgba(252, 241, 230, 0.7);
+  --one-eighty: rgba(252, 241, 230, 0.8);
+  --one-ninety: rgba(252, 241, 230, 0.9);
+
+  --two: rgba(217, 121, 156, 1);
+  --two-ten: rgba(217, 121, 156, 0.1);
+  --two-twenty: rgba(217, 121, 156, 0.2);
+  --two-thirty: rgba(217, 121, 156, 0.3);
+  --two-forty: rgba(217, 121, 156, 0.4);
+  --two-fifty: rgba(217, 121, 156, 0.5);
+  --two-sixty: rgba(217, 121, 156, 0.6);
+  --two-seventy: rgba(217, 121, 156, 0.7);
+  --two-eighty: rgba(217, 121, 156, 0.8);
+  --two-ninety: rgba(217, 121, 156, 0.9);
+
+  --three: rgba(4, 173, 191, 1);
+  --three-ten: rgba(4, 173, 191, 0.1);
+  --three-twenty: rgba(4, 173, 191, 0.2);
+  --three-thirty: rgba(4, 173, 191, 0.3);
+  --three-forty: rgba(4, 173, 191, 0.4);
+  --three-fifty: rgba(4, 173, 191, 0.5);
+  --three-sixty: rgba(4, 173, 191, 0.6);
+  --three-seventy: rgba(4, 173, 191, 0.7);
+  --three-eighty: rgba(4, 173, 191, 0.8);
+  --three-ninety: rgba(4, 173, 191, 0.9);
+
+  --four: rgba(94, 78, 179, 1);
+  --four-ten: rgba(94, 78, 179, 0.1);
+  --four-twenty: rgba(94, 78, 179, 0.2);
+  --four-thirty: rgba(94, 78, 179, 0.3);
+  --four-forty: rgba(94, 78, 179, 0.4);
+  --four-fifty: rgba(94, 78, 179, 0.5);
+  --four-sixty: rgba(94, 78, 179, 0.6);
+  --four-seventy: rgba(94, 78, 179, 0.7);
+  --four-eighty: rgba(94, 78, 179, 0.8);
+  --four-ninety: rgba(94, 78, 179, 0.9);
+
+  --five: rgb(211, 23, 145);
+  --five-ten: rgba(4, 4, 4, 0.1);
+  --five-twenty: rgba(209, 0, 136, 0.2);
+  --five-thirty: rgba(44, 34, 37, 0.3);
+  --five-forty: rgba(209, 0, 136, 0.4);
+  --five-fifty: rgba(209, 0, 136, 0.5);
+  --five-sixty: rgba(209, 0, 136, 0.6);
+  --five-seventy: rgba(209, 0, 136, 0.7);
+  --five-eighty: rgba(209, 0, 136, 0.8);
+  --five-ninety: rgba(209, 0, 136, 0.9);
+
+  --six: rgba(89, 2, 59, 1);
+  --six-ten: rgba(89, 2, 59, 0.1);
+  --six-twenty: rgba(89, 2, 59, 0.2);
+  --six-thirty: rgba(89, 2, 59, 0.3);
+  --six-forty: rgba(89, 2, 59, 0.4);
+  --six-fifty: rgba(89, 2, 59, 0.5);
+  --six-sixty: rgba(89, 2, 59, 0.6);
+  --six-seventy: rgba(89, 2, 59, 0.7);
+  --six-eighty: rgba(89, 2, 59, 0.8);
+  --six-ninety: rgba(89, 2, 59, 0.9);
+
+  --seven: rgba(42, 22, 115, 1);
+  --seven-ten: rgba(42, 22, 115, 0.1);
+  --seven-twenty: rgba(42, 22, 115, 0.2);
+  --seven-thirty: rgba(42, 22, 115, 0.3);
+  --seven-forty: rgba(42, 22, 115, 0.4);
+  --seven-fifty: rgba(42, 22, 115, 0.5);
+  --seven-sixty: rgba(42, 22, 115, 0.6);
+  --seven-seventy: rgba(42, 22, 115, 0.7);
+  --seven-eighty: rgba(42, 22, 115, 0.8);
+  --seven-ninety: rgba(42, 22, 115, 0.9);
+
+  --eight: rgba(2, 48, 89, 1);
+  --eight-ten: rgba(2, 48, 89, 0.1);
+  --eight-twenty: rgba(2, 48, 89, 0.2);
+  --eight-thirty: rgba(2, 48, 89, 0.3);
+  --eight-forty: rgba(2, 48, 89, 0.4);
+  --eight-fifty: rgba(2, 48, 89, 0.5);
+  --eight-sixty: rgba(2, 48, 89, 0.6);
+  --eight-seventy: rgba(2, 48, 89, 0.7);
+  --eight-eighty: rgba(2, 48, 89, 0.8);
+  --eight-ninety: rgba(2, 48, 89, 0.9);
+
+  --nine: rgba(42, 47, 86, 1);
+  --nine-ten: rgba(42, 47, 86, 0.1);
+  --nine-twenty: rgba(42, 47, 86, 0.2);
+  --nine-thirty: rgba(42, 47, 86, 0.3);
+  --nine-forty: rgba(42, 47, 86, 0.4);
+  --nine-fifty: rgba(42, 47, 86, 0.5);
+  --nine-sixty: rgba(42, 47, 86, 0.6);
+  --nine-seventy: rgba(42, 47, 86, 0.7);
+  --nine-eighty: rgba(42, 47, 86, 0.8);
+  --nine-ninety: rgba(42, 47, 86, 0.9);
+
+  /* SCREENS  */
+  --sz-mobile: 360px;
+  --sz-sm: 640px;
+  --sz-md: 768px;
+  --sz-lg: 1024px;
+  --sz-xl: 1280px;
+  --sz-xxl: 1600px;
+  --sz-fullHD: 1920px;
+  --sz-quadHD: 2560px;
+  --sz-ultraHD: 3840px;
+
+  /* BOX SHADOWS  */
+  --shadowxxs: 0.1vh 0.1vh 0.1vh rgba(0, 0, 0, 0.8);
+  --shadowxs: 0.1vh 0.1vh 0.2vh rgba(0, 0, 0, 0.8);
+  --shadowsm: 0.2vh 0.2vh 0.2vh rgba(0, 0, 0, 0.8);
+  --shadowmd: 0.2vh 0.2vh 0.5vh rgba(0, 0, 0, 0.8);
+  --shadowlg: 0.5vh 0.5vh 1vh rgba(0, 0, 0, 0.8);
+  --shadowxl: 1vh 1vh 2vh rgba(0, 0, 0, 0.8);
+  --shadowxxl: 2vh 2vh 4vh rgba(0, 0, 0, 0.8);
+
+  /* TEXT SHADOWS  */
+  --txtshadowxxs: 0.1vh 0.1vh 0.1vh rgba(0, 0, 0, 0.8);
+  --txtshadowxs: 0.1vh 0.1vh 0.2vh rgba(0, 0, 0, 0.8);
+  --txtshadowsm: 0.2vh 0.2vh 0.2vh rgba(0, 0, 0, 0.8);
+  --txtshadowmd: 0.2vh 0.2vh 0.5vh rgba(0, 0, 0, 0.8);
+  --txtshadowlg: 0.2vh 0.2vh 0.7vh rgba(0, 0, 0, 1);
+  --txtshadowxl: 0.2vh 0.2vh 0.8vh rgba(0, 0, 0, 1);
+  --txtshadowxxl: 0.2vh 0.2vh 0.9vh rgba(0, 0, 0, 1);
+  --txtglow100xxs: 0.1vh 0.1vh 0.1vh var(--one-eighty);
+  --txtglow100xs: 0.1vh 0.1vh 0.2vh var(--one-eighty);
+  --txtglow100sm: 0.2vh 0.2vh 0.2vh var(--one-eighty);
+  --txtglow100md: 0.2vh 0.2vh 0.5vh var(--one-eighty);
+  --txtglow100lg: 0vh 0vh 0.7vh var(--one-eighty);
+  --txtglow100xl: 0vh 0vh 0.8vh var(--one);
+  --txtglow100xxl: 0vh 0vh 0.9vh var(--one);
+  --txtglow200xxs: 0.1vh 0.1vh 0.1vh var(--two-eighty);
+  --txtglow200xs: 0.1vh 0.1vh 0.2vh var(--two-eighty);
+  --txtglow200sm: 0.2vh 0.2vh 0.2vh var(--two-eighty);
+  --txtglow200md: 0.2vh 0.2vh 0.5vh var(--two-eighty);
+  --txtglow200lg: 0vh 0vh 0.7vh var(--two-eighty);
+  --txtglow200xl: 0vh 0vh 0.8vh var(--two);
+  --txtglow200xxl: 0vh 0vh 0.9vh var(--two);
+  --txtglow300xxs: 0.1vh 0.1vh 0.1vh var(--three-eighty);
+  --txtglow300xs: 0.1vh 0.1vh 0.2vh var(--three-eighty);
+  --txtglow300sm: 0.2vh 0.2vh 0.2vh var(--three-eighty);
+  --txtglow300md: 0.2vh 0.2vh 0.5vh var(--three-eighty);
+  --txtglow300lg: 0vh 0vh 0.7vh var(--three-eighty);
+  --txtglow300xl: 0vh 0vh 0.8vh var(--three);
+  --txtglow300xxl: 0vh 0vh 0.9vh var(--three);
+  --txtglow400xxs: 0.1vh 0.1vh 0.1vh var(--four-eighty);
+  --txtglow400xs: 0.1vh 0.1vh 0.2vh var(--four-eighty);
+  --txtglow400sm: 0.2vh 0.2vh 0.2vh var(--four-eighty);
+  --txtglow400md: 0.2vh 0.2vh 0.5vh var(--four-eighty);
+  --txtglow400lg: 0vh 0vh 0.7vh var(--four-eighty);
+  --txtglow400xl: 0vh 0vh 0.8vh var(--four);
+  --txtglow400xxl: 0vh 0vh 0.9vh var(--four);
+  --txtglow500xxs: 0.1vh 0.1vh 0.1vh var(--five-eighty);
+  --txtglow500xs: 0.1vh 0.1vh 0.2vh var(--five-eighty);
+  --txtglow500sm: 0.2vh 0.2vh 0.2vh var(--five-eighty);
+  --txtglow500md: 0.2vh 0.2vh 0.5vh var(--five-eighty);
+  --txtglow500lg: 0vh 0vh 0.7vh var(--five-eighty);
+  --txtglow500xl: 0vh 0vh 0.8vh var(--five);
+  --txtglow500xxl: 0vh 0vh 0.9vh var(--five);
+  --txtglow600xxs: 0.1vh 0.1vh 0.1vh var(--six-eighty);
+  --txtglow600xs: 0.1vh 0.1vh 0.2vh var(--six-eighty);
+  --txtglow600sm: 0.2vh 0.2vh 0.2vh var(--six-eighty);
+  --txtglow600md: 0.2vh 0.2vh 0.5vh var(--six-eighty);
+  --txtglow600lg: 0vh 0vh 0.7vh var(--six-eighty);
+  --txtglow600xl: 0vh 0vh 0.8vh var(--six);
+  --txtglow600xxl: 0vh 0vh 0.9vh var(--six);
+  --txtglow700xxs: 0.1vh 0.1vh 0.1vh var(--seven-eighty);
+  --txtglow700xs: 0.1vh 0.1vh 0.2vh var(--seven-eighty);
+  --txtglow700sm: 0.2vh 0.2vh 0.2vh var(--seven-eighty);
+  --txtglow700md: 0.2vh 0.2vh 0.5vh var(--seven-eighty);
+  --txtglow700lg: 0vh 0vh 0.7vh var(--seven-eighty);
+  --txtglow700xl: 0vh 0vh 0.8vh var(--seven);
+  --txtglow700xxl: 0vh 0vh 0.9vh var(--seven);
+  --txtglow800xxs: 0.1vh 0.1vh 0.1vh var(--eight-eighty);
+  --txtglow800xs: 0.1vh 0.1vh 0.2vh var(--eight-eighty);
+  --txtglow800sm: 0.2vh 0.2vh 0.2vh var(--eight-eighty);
+  --txtglow800md: 0.2vh 0.2vh 0.5vh var(--eight-eighty);
+  --txtglow800lg: 0vh 0vh 0.7vh var(--eight-eighty);
+  --txtglow800xl: 0vh 0vh 0.8vh var(--eight);
+  --txtglow800xxl: 0vh 0vh 0.9vh var(--eight);
+  --txtglow900xxs: 0.1vh 0.1vh 0.1vh var(--nine-eighty);
+  --txtglow900xs: 0.1vh 0.1vh 0.2vh var(--nine-eighty);
+  --txtglow900sm: 0.2vh 0.2vh 0.2vh var(--nine-eighty);
+  --txtglow900md: 0.2vh 0.2vh 0.5vh var(--nine-eighty);
+  --txtglow900lg: 0vh 0vh 0.7vh var(--nine-eighty);
+  --txtglow900xl: 0vh 0vh 0.8vh var(--nine);
+  --txtglow900xxl: 0vh 0vh 0.9vh var(--nine);
+
+  /* SPACING  */
+  --xxxs: 0.2vh;
+  --xxs: 0.3vh;
+  --xs: 0.5vh;
+  --sm: 0.7vh;
+  --md: 1vh;
+  --lg: 1.5vh;
+  --xl: 2vh;
+  --xxl: 2.5vh;
+  --xxxl: 3vh;
+  --xxxxl: 3.5vh;
+  --xxxxxl: 4vh;
+  --xxxxxxl: 4.5vh;
+  --xxxxxxxl: 5vh;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100svh;
+  width: 100vw;
+  font-family: "Roboto", sans-serif;
+  color: var(--nine);
+  font-size: var(--txt-md);
+  background-color: var(--nine);
+}
+
+.button {
+  text-decoration: none;
+  background-color: var(--one-forty);
+  background: linear-gradient(
+    145deg,
+    var(--five-fifty) 0%,
+    var(--six-fifty) 100%
+  );
+  color: var(--one);
+  text-shadow: var(--txtshadowmd);
+  border-radius: var(--lg);
+  padding: var(--xxs) var(--lg);
+  box-shadow: var(--shadowmd);
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--five);
+  color: var(--one);
+  box-shadow: var(--shadowlg);
+}
+
+/* TYPOGRAPHY  */
+
+h1 {
+  font-size: 5.5vh;
+  line-height: 1.1;
+  font-weight: 600;
+  color: var(--one);
+  text-shadow: var(--txtshadowmd);
+}
+
+h2 {
+  font-size: 4.5vh;
+  line-height: 1.1;
+  font-weight: 600;
+  color: var(--one);
+  text-shadow: var(--txtshadowmd);
+}
+
+h3 {
+  font-size: 3.5vh;
+  line-height: 1.1;
+  font-weight: 600;
+  color: var(--one);
+  text-shadow: var(--txtshadowmd);
+}
+
+h4 {
+  font-size: 2.5vh;
+  line-height: 1.1;
+  font-weight: 600;
+  color: var(--one);
+  text-shadow: var(--txtshadowmd);
+}
+
+h5 {
+  font-size: 2vh;
+  line-height: 1.1;
+  font-weight: 600;
+  color: var(--one);
+  text-shadow: var(--txtshadowmd);
+}
+
+.txt-xxs {
+  font-size: 1.2vh;
+  line-height: 1.1;
+}
+
+.txt-xs {
+  font-size: 1.5vh;
+  line-height: 1.1;
+}
+
+.txt-sm {
+  font-size: 1.7vh;
+  line-height: 1.1;
+}
+
+.txt-md {
+  font-size: 2vh;
+  line-height: 1.1;
+}
+
+.txt-lg {
+  font-size: 2.4vh;
+  line-height: 1.1;
+}
+
+.txt-xl {
+  font-size: 2.8vh;
+  line-height: 1.1;
+}
+
+.txt-2xl {
+  font-size: 3vh;
+  line-height: 1.1;
+}
+
+.txt-3xl {
+  font-size: 3.3vh;
+  line-height: 1.1;
+}
+
+.txt-4xl {
+  font-size: 3.6vh;
+  line-height: 1.1;
+}
+
+.txt-5xl {
+  font-size: 4vh;
+  line-height: 1.1;
+}
+
+.txt-6xl {
+  font-size: 4.5vh;
+  line-height: 1.1;
+}
+
+.txtshadow-xxs {
+  text-shadow: var(--txtshadowxxs);
+}
+
+.txtshadow-xs {
+  text-shadow: var(--txtshadowxs);
+}
+
+.txtshadow-sm {
+  text-shadow: var(--txtshadowsm);
+}
+
+.txtshadow-md {
+  text-shadow: var(--txtshadowmd);
+}
+
+.txtshadow-lg {
+  text-shadow: var(--txtshadowlg);
+}
+
+.txtshadow-xl {
+  text-shadow: var(--txtshadowxl);
+}
+
+.txtshadow-xxl {
+  text-shadow: var(--txtshadowxxl);
+}
+
+.textglow100-xxs {
+  text-shadow: var(--txtglow100xxs);
+}
+
+.textglow100-xs {
+  text-shadow: var(--txtglow100xs);
+}
+
+.textglow100-sm {
+  text-shadow: var(--txtglow100sm);
+}
+
+.textglow100-md {
+  text-shadow: var(--txtglow100md);
+}
+
+.textglow100-lg {
+  text-shadow: var(--txtglow100lg);
+}
+
+.textglow100-xl {
+  text-shadow: var(--txtglow100xl);
+}
+
+.textglow100-xxl {
+  text-shadow: var(--txtglow100xxl);
+}
+
+.textglow200-xxs {
+  text-shadow: var(--txtglow200xxs);
+}
+
+.textglow200-xs {
+  text-shadow: var(--txtglow200xs);
+}
+
+.textglow200-sm {
+  text-shadow: var(--txtglow200sm);
+}
+
+.textglow200-md {
+  text-shadow: var(--txtglow200md);
+}
+
+.textglow200-lg {
+  text-shadow: var(--txtglow200lg);
+}
+
+.textglow200-xl {
+  text-shadow: var(--txtglow200xl);
+}
+
+.textglow200-xxl {
+  text-shadow: var(--txtglow200xxl);
+}
+
+.textglow300-xxs {
+  text-shadow: var(--txtglow300xxs);
+}
+
+.textglow300-xs {
+  text-shadow: var(--txtglow300xs);
+}
+
+.textglow300-sm {
+  text-shadow: var(--txtglow300sm);
+}
+
+.textglow300-md {
+  text-shadow: var(--txtglow300md);
+}
+
+.textglow300-lg {
+  text-shadow: var(--txtglow300lg);
+}
+
+.textglow300-xl {
+  text-shadow: var(--txtglow300xl);
+}
+
+.textglow300-xxl {
+  text-shadow: var(--txtglow300xxl);
+}
+
+.textglow400-xxs {
+  text-shadow: var(--txtglow400xxs);
+}
+
+.textglow400-xs {
+  text-shadow: var(--txtglow400xs);
+}
+
+.textglow400-sm {
+  text-shadow: var(--txtglow400sm);
+}
+
+.textglow400-md {
+  text-shadow: var(--txtglow400md);
+}
+
+.textglow400-lg {
+  text-shadow: var(--txtglow400lg);
+}
+
+.textglow400-xl {
+  text-shadow: var(--txtglow400xl);
+}
+
+.textglow400-xxl {
+  text-shadow: var(--txtglow400xxl);
+}
+
+.textglow500-xxs {
+  text-shadow: var(--txtglow500xxs);
+}
+
+.textglow500-xs {
+  text-shadow: var(--txtglow500xs);
+}
+
+.textglow500-sm {
+  text-shadow: var(--txtglow500sm);
+}
+
+.textglow500-md {
+  text-shadow: var(--txtglow500md);
+}
+
+.textglow500-lg {
+  text-shadow: var(--txtglow500lg);
+}
+
+.textglow500-xl {
+  text-shadow: var(--txtglow500xl);
+}
+
+.textglow500-xxl {
+  text-shadow: var(--txtglow500xxl);
+}
+
+.textglow600-xxs {
+  text-shadow: var(--txtglow600xxs);
+}
+
+.textglow600-xs {
+  text-shadow: var(--txtglow600xs);
+}
+
+.textglow600-sm {
+  text-shadow: var(--txtglow600sm);
+}
+
+.textglow600-md {
+  text-shadow: var(--txtglow600md);
+}
+
+.textglow600-lg {
+  text-shadow: var(--txtglow600lg);
+}
+
+.textglow600-xl {
+  text-shadow: var(--txtglow600xl);
+}
+
+.textglow600-xxl {
+  text-shadow: var(--txtglow600xxl);
+}
+
+.textglow700-xxs {
+  text-shadow: var(--txtglow700xxs);
+}
+
+.textglow700-xs {
+  text-shadow: var(--txtglow700xs);
+}
+
+.textglow700-sm {
+  text-shadow: var(--txtglow700sm);
+}
+
+.textglow700-md {
+  text-shadow: var(--txtglow700md);
+}
+
+.textglow700-lg {
+  text-shadow: var(--txtglow700lg);
+}
+
+.textglow700-xl {
+  text-shadow: var(--txtglow700xl);
+}
+
+.textglow700-xxl {
+  text-shadow: var(--txtglow700xxl);
+}
+
+.textglow800-xxs {
+  text-shadow: var(--txtglow800xxs);
+}
+
+.textglow800-xs {
+  text-shadow: var(--txtglow800xs);
+}
+
+.textglow800-sm {
+  text-shadow: var(--txtglow800sm);
+}
+
+.textglow800-md {
+  text-shadow: var(--txtglow800md);
+}
+
+.textglow800-lg {
+  text-shadow: var(--txtglow800lg);
+}
+
+.textglow800-xl {
+  text-shadow: var(--txtglow800xl);
+}
+
+.textglow800-xxl {
+  text-shadow: var(--txtglow800xxl);
+}
+
+.textglow900-xxs {
+  text-shadow: var(--txtglow900xxs);
+}
+
+.textglow900-xs {
+  text-shadow: var(--txtglow900xs);
+}
+
+.textglow900-sm {
+  text-shadow: var(--txtglow900sm);
+}
+
+.textglow900-md {
+  text-shadow: var(--txtglow900md);
+}
+
+.textglow900-lg {
+  text-shadow: var(--txtglow900lg);
+}
+
+.textglow900-xl {
+  text-shadow: var(--txtglow900xl);
+}
+
+.textglow900-xxl {
+  text-shadow: var(--txtglow900xxl);
+}
+
+/* BOX SHADOWS  */
+
+.shadow-xxs {
+  box-shadow: var(--shadowxxs);
+}
+
+.shadow-xs {
+  box-shadow: var(--shadowxs);
+}
+
+.shadow-sm {
+  box-shadow: var(--shadowsm);
+}
+
+.shadow-md {
+  box-shadow: var(--shadowmd);
+}
+
+.shadow-lg {
+  box-shadow: var(--shadowlg);
+}
+
+.shadow-xl {
+  box-shadow: var(--shadowxl);
+}
+
+.shadow-2xl {
+  box-shadow: var(--shadowxxl);
+}
+
+/* BUILDING BLOCK CLASSES  */
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100svh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+.flexfull {
+  display: flex;
+  width: 100%;
+}
+
+.centerfull {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.vstack {
+  display: flex;
+  flex-direction: column;
+}
+
+.vstackfull {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.wrapfull {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* PROJECT SPECIFIC CUSTOM COMPONENT CLASSES  */
+
+.colortheme {
+  display: flex;
+  padding: 1vh 2vh;
+  border-radius: var(--md);
+  text-wrap: nowrap;
+  box-shadow: var(--shadowmd);
+}
+
+.simple-container {
+  display: flex;
+  padding: var(--md);
+  background-color: var(--three);
+  width: fit-content;
+  box-shadow: var(--shadowlg);
+}
+
+.container-one {
+  background-color: var(--six);
+  border: var(--xxxs) solid var(--two);
+  color: var(--one);
+  border-radius: var(--md);
+  padding: var(--md);
+  box-shadow: var(--shadowmd);
+}
+
+.container-two {
+  background-color: var(--seven);
+  border: var(--xxxs) solid var(--four);
+  color: var(--one);
+  border-radius: var(--md);
+  padding: var(--md);
+  box-shadow: var(--shadowmd);
+}
+
+.container-three {
+  border: var(--xxxs) solid var(--three);
+  background-color: var(--eight);
+  border-radius: var(--md);
+  color: var(--one);
+  padding: var(--md);
+  box-shadow: var(--shadowmd);
+}
