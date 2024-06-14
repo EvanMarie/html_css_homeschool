@@ -1,0 +1,18 @@
+<!-- nav.html -->
+<button id="navToggle" class="fixed top-4 right-4 bg-gray-800 text-white p-2 rounded-full focus:outline-none z-10">
+    <!-- Icon (e.g., hamburger menu) -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+</button>
+
+<div id="navModal" class="fixed inset-0 bg-gray-800 bg-opacity-90 hidden">
+    <div class="flex justify-center items-center h-full">
+        <nav class="text-white text-center space-y-4">
+            <a href="/" class="block text-2xl hover:text-gray-300">Home</a>
+            <a href="/about.html" class="block text-2xl hover:text-gray-300">About</a>
+            <a href="/contact.html" class="block text-2xl hover:text-gray-300">Contact</a>
+            <button id="closeNav" class="mt-8 px-4 py-2 bg-red-600 rounded">Close</button>
+        </nav>
+    </div>
+</div>

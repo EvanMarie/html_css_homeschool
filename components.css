@@ -49,6 +49,7 @@
   background: linear-gradient(145deg, var(--four) 0%, var(--three) 100%);
   padding: var(--md);
   color: var(--nine);
+  font-weight: 500;
   font-size: var(--txt-md);
   text-shadow: var(--txtglow100lg);
   box-shadow: var(--shadowmd);
