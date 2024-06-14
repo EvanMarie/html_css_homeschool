@@ -21,7 +21,35 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('/nav.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.body.insertAdjacentHTML('beforeend', data);
 
+                    const navToggle = document.getElementById('navToggle');
+                    const navModal = document.getElementById('navModal');
+                    const closeNav = document.getElementById('closeNav');
+
+                    navToggle.addEventListener('click', () => {
+                        navModal.classList.remove('hidden');
+                    });
+
+                    closeNav.addEventListener('click', () => {
+                        navModal.classList.add('hidden');
+                    });
+
+                    // Close modal when clicking outside the nav
+                    window.addEventListener('click', (event) => {
+                        if (event.target == navModal) {
+                            navModal.classList.add('hidden');
+                        }
+                    });
+                })
+                .catch(error => console.error('Error loading navigation:', error));
+        });
+    </script>
 </head>
 
 <body class="bg-indigo-900">
@@ -30,19 +58,9 @@
         <![endif]-->
     <!-- -------------------------- MAIN PAGE -------------------------- -->
     <div class="page-container py-xl7">
-        <div class="nav-container">
-            <div class="nav-button">English</div>
-            <a href="/homeschool-2024-2025/history/" class="nav-button">
-                History
-            </a>
-            <a href="/homeschool-2024-2025/science/" class="nav-button">Science</a>
-            <a href="/homeschool-2024-2025/m-math/" class="nav-button">M. Math</a>
-            <a href="/homeschool-2024-2025/e-math/" class="nav-button">E. Math</a>
-            <a href="/homeschool-2024-2025/german/" class="nav-button">German</a>
-            <a href="/homeschool-2024-2025/enrichment/" class="nav-button">Enrichment</a>
-        </div>
+
         <div class="flexfull px-sm justify-center">
-            <h1 class="text-4xl text-center my-8">MICHAEL MATH</h1>
+            <h1 class="text-4xl text-center my-8">MICHAEL MATH INDEX</h1>
         </div>
         <div class="flexfull justify-center">
             <div class="vstack gap-md w-30vh">
