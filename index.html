@@ -8,9 +8,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>
-
-    </title>
+    <title>Horizontal Snap Scrolling</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
@@ -19,33 +17,51 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
         rel="stylesheet">
-
 </head>
 
 <body class="bg-indigo-900">
     <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    <div class="container mx-auto">
-        <div class="flexfull px-sm justify-center">
-            <h1 class="text-4xl text-center my-8">Michael & Emma Homeschool 2024-2025</h1>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="w-screen h-screen overflow-x-auto snap-x snap-mandatory">
+        <!-- -------------------------- MAIN PAGE -------------------------- -->
+        <div class="w-screen h-screen flex-shrink-0 snap-center flex items-center justify-center">
+            <div class="text-center">
+                <h1 class="text-4xl my-8 text-white">Michael & Emma Homeschool 2024-2025</h1>
+                <div class="space-y-4">
+                    <div class="button">English</div>
+                    <a href="/world-history/">
+                        <div class="button">World History</div>
+                    </a>
+                    <div class="button">Physics & Electronics</div>
+                    <div class="button">Michael's Math</div>
+                    <div class="button">Emma's Math</div>
+                    <div class="button">German</div>
+                    <div class="button">Enrichment</div>
+                </div>
+            </div>
         </div>
-        <div class="flexfull justify-center">
-            <div class="vstack gap-md w-30vh">
-                <div class="button">English</div>
-                <a href="/world-history/">
-                    <div class="button">World History</div>
-                </a>
-                <div class="button">Physics & Electronics</div>
-                <div class="button">Michael's Math</div>
-                <div class="button">Emma's Math</div>
-                <div class="button">German</div>
-                <div class="button">Enrichment</div>
+        <!-- -------------------------- SECOND PAGE -------------------------- -->
+        <div class="w-screen h-screen flex-shrink-0 snap-center flex items-center justify-center">
+            <div class="text-center">
+                <h1 class="text-4xl my-8 text-white">Michael & Emma Homeschool 2024-2025</h1>
+                <div class="space-y-4">
+                    <div class="button">English</div>
+                    <a href="/homeschool-2024-2025/world-history/">
+                        <div class="button">World History</div>
+                    </a>
+                    <div class="button">Physics & Electronics</div>
+                    <div class="button">Michael's Math</div>
+                    <div class="button">Emma's Math</div>
+                    <div class="button">German</div>
+                    <div class="button">Enrichment</div>
+                </div>
             </div>
         </div>
     </div>
+
     <script src="/path/to/nav.js"></script>
 </body>
 
