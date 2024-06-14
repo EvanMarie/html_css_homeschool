@@ -1,108 +1,114 @@
 /* You can add global styles to this file, and also import other style files */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 /* COLORS  */
 :root {
-  --one: rgba(252, 241, 230, 1);
-  --one-ten: rgba(252, 241, 230, 0.1);
-  --one-twenty: rgba(252, 241, 230, 0.2);
-  --one-thirty: rgba(252, 241, 230, 0.3);
-  --one-forty: rgba(252, 241, 230, 0.4);
-  --one-fifty: rgba(252, 241, 230, 0.5);
-  --one-sixty: rgba(252, 241, 230, 0.6);
-  --one-seventy: rgba(252, 241, 230, 0.7);
-  --one-eighty: rgba(252, 241, 230, 0.8);
-  --one-ninety: rgba(252, 241, 230, 0.9);
+  /* indigo-100  */
+  --one: rgba(224, 231, 255, 1);
+  --one-ten: rgba(224, 231, 255, 0.1);
+  --one-twenty: rgba(224, 231, 255, 0.2);
+  --one-thirty: rgba(224, 231, 255, 0.3);
+  --one-forty: rgba(224, 231, 255, 0.4);
+  --one-fifty: rgba(224, 231, 255, 0.5);
+  --one-sixty: rgba(224, 231, 255, 0.6);
+  --one-seventy: rgba(224, 231, 255, 0.7);
+  --one-eighty: rgba(224, 231, 255, 0.8);
+  --one-ninety: rgba(224, 231, 255, 0.9);
 
-  --two: rgba(217, 121, 156, 1);
-  --two-ten: rgba(217, 121, 156, 0.1);
-  --two-twenty: rgba(217, 121, 156, 0.2);
-  --two-thirty: rgba(217, 121, 156, 0.3);
-  --two-forty: rgba(217, 121, 156, 0.4);
-  --two-fifty: rgba(217, 121, 156, 0.5);
-  --two-sixty: rgba(217, 121, 156, 0.6);
-  --two-seventy: rgba(217, 121, 156, 0.7);
-  --two-eighty: rgba(217, 121, 156, 0.8);
-  --two-ninety: rgba(217, 121, 156, 0.9);
+  /* fuchsia-300  */
+  --two: rgba(240, 171, 252, 1);
+  --two-ten: rgba(240, 171, 252, 0.1);
+  --two-twenty: rgba(240, 171, 252, 0.2);
+  --two-thirty: rgba(240, 171, 252, 0.3);
+  --two-forty: rgba(240, 171, 252, 0.4);
+  --two-fifty: rgba(240, 171, 252, 0.5);
+  --two-sixty: rgba(240, 171, 252, 0.6);
+  --two-seventy: rgba(240, 171, 252, 0.7);
+  --two-eighty: rgba(240, 171, 252, 0.8);
+  --two-ninety: rgba(240, 171, 252, 0.9);
 
-  --three: rgba(4, 173, 191, 1);
-  --three-ten: rgba(4, 173, 191, 0.1);
-  --three-twenty: rgba(4, 173, 191, 0.2);
-  --three-thirty: rgba(4, 173, 191, 0.3);
-  --three-forty: rgba(4, 173, 191, 0.4);
-  --three-fifty: rgba(4, 173, 191, 0.5);
-  --three-sixty: rgba(4, 173, 191, 0.6);
-  --three-seventy: rgba(4, 173, 191, 0.7);
-  --three-eighty: rgba(4, 173, 191, 0.8);
-  --three-ninety: rgba(4, 173, 191, 0.9);
+  /* cyan-300 */
+  --three: rgba(103, 232, 249, 1);
+  --three-ten: rgba(103, 232, 249, 0.1);
+  --three-twenty: rgba(103, 232, 249, 0.2);
+  --three-thirty: rgba(103, 232, 249, 0.3);
+  --three-forty: rgba(103, 232, 249, 0.4);
+  --three-fifty: rgba(103, 232, 249, 0.5);
+  --three-sixty: rgba(103, 232, 249, 0.6);
+  --three-seventy: rgba(103, 232, 249, 0.7);
+  --three-eighty: rgba(103, 232, 249, 0.8);
+  --three-ninety: rgba(103, 232, 249, 0.9);
 
-  --four: rgba(94, 78, 179, 1);
-  --four-ten: rgba(94, 78, 179, 0.1);
-  --four-twenty: rgba(94, 78, 179, 0.2);
-  --four-thirty: rgba(94, 78, 179, 0.3);
-  --four-forty: rgba(94, 78, 179, 0.4);
-  --four-fifty: rgba(94, 78, 179, 0.5);
-  --four-sixty: rgba(94, 78, 179, 0.6);
-  --four-seventy: rgba(94, 78, 179, 0.7);
-  --four-eighty: rgba(94, 78, 179, 0.8);
-  --four-ninety: rgba(94, 78, 179, 0.9);
+  /* indigo-300  */
+  --four: rgba(165, 179, 252, 1);
+  --four-ten: rgba(165, 179, 252, 0.1);
+  --four-twenty: rgba(165, 179, 252, 0.2);
+  --four-thirty: rgba(165, 179, 252, 0.3);
+  --four-forty: rgba(165, 179, 252, 0.4);
+  --four-fifty: rgba(165, 179, 252, 0.5);
+  --four-sixty: rgba(165, 179, 252, 0.6);
+  --four-seventy: rgba(165, 179, 252, 0.7);
+  --four-eighty: rgba(165, 179, 252, 0.8);
+  --four-ninety: rgba(165, 179, 252, 0.9);
 
-  --five: rgb(211, 23, 145);
-  --five-ten: rgba(4, 4, 4, 0.1);
-  --five-twenty: rgba(209, 0, 136, 0.2);
+  /* fuchsia-600  */
+  --five: rgb(192, 38, 211);
+  --five-ten: rgba(192, 38, 211, 0.1);
+  --five-twenty: rgba(192, 38, 211, 0.2);
   --five-thirty: rgba(44, 34, 37, 0.3);
-  --five-forty: rgba(209, 0, 136, 0.4);
-  --five-fifty: rgba(209, 0, 136, 0.5);
-  --five-sixty: rgba(209, 0, 136, 0.6);
-  --five-seventy: rgba(209, 0, 136, 0.7);
-  --five-eighty: rgba(209, 0, 136, 0.8);
-  --five-ninety: rgba(209, 0, 136, 0.9);
+  --five-forty: rgba(192, 38, 211, 0.4);
+  --five-fifty: rgba(192, 38, 211, 0.5);
+  --five-sixty: rgba(192, 38, 211, 0.6);
+  --five-seventy: rgba(192, 38, 211, 0.7);
+  --five-eighty: rgba(192, 38, 211, 0.8);
+  --five-ninety: rgba(192, 38, 211, 0.9);
 
-  --six: rgba(89, 2, 59, 1);
-  --six-ten: rgba(89, 2, 59, 0.1);
-  --six-twenty: rgba(89, 2, 59, 0.2);
-  --six-thirty: rgba(89, 2, 59, 0.3);
-  --six-forty: rgba(89, 2, 59, 0.4);
-  --six-fifty: rgba(89, 2, 59, 0.5);
-  --six-sixty: rgba(89, 2, 59, 0.6);
-  --six-seventy: rgba(89, 2, 59, 0.7);
-  --six-eighty: rgba(89, 2, 59, 0.8);
-  --six-ninety: rgba(89, 2, 59, 0.9);
+  /* indigo-700  */
+  --six: rgba(68, 56, 202, 1);
+  --six-ten: rgba(68, 56, 202, 0.1);
+  --six-twenty: rgba(68, 56, 202, 0.2);
+  --six-thirty: rgba(68, 56, 202, 0.3);
+  --six-forty: rgba(68, 56, 202, 0.4);
+  --six-fifty: rgba(68, 56, 202, 0.5);
+  --six-sixty: rgba(68, 56, 202, 0.6);
+  --six-seventy: rgba(68, 56, 202, 0.7);
+  --six-eighty: rgba(68, 56, 202, 0.8);
+  --six-ninety: rgba(68, 56, 202, 0.9);
 
-  --seven: rgba(42, 22, 115, 1);
-  --seven-ten: rgba(42, 22, 115, 0.1);
-  --seven-twenty: rgba(42, 22, 115, 0.2);
-  --seven-thirty: rgba(42, 22, 115, 0.3);
-  --seven-forty: rgba(42, 22, 115, 0.4);
-  --seven-fifty: rgba(42, 22, 115, 0.5);
-  --seven-sixty: rgba(42, 22, 115, 0.6);
-  --seven-seventy: rgba(42, 22, 115, 0.7);
-  --seven-eighty: rgba(42, 22, 115, 0.8);
-  --seven-ninety: rgba(42, 22, 115, 0.9);
+  /* slate-600  */
+  --seven: rgba(71, 85, 105, 1);
+  --seven-ten: rgba(71, 85, 105, 0.1);
+  --seven-twenty: rgba(71, 85, 105, 0.2);
+  --seven-thirty: rgba(71, 85, 105, 0.3);
+  --seven-forty: rgba(71, 85, 105, 0.4);
+  --seven-fifty: rgba(71, 85, 105, 0.5);
+  --seven-sixty: rgba(71, 85, 105, 0.6);
+  --seven-seventy: rgba(71, 85, 105, 0.7);
+  --seven-eighty: rgba(71, 85, 105, 0.8);
+  --seven-ninety: rgba(71, 85, 105, 0.9);
 
-  --eight: rgba(2, 48, 89, 1);
-  --eight-ten: rgba(2, 48, 89, 0.1);
-  --eight-twenty: rgba(2, 48, 89, 0.2);
-  --eight-thirty: rgba(2, 48, 89, 0.3);
-  --eight-forty: rgba(2, 48, 89, 0.4);
-  --eight-fifty: rgba(2, 48, 89, 0.5);
-  --eight-sixty: rgba(2, 48, 89, 0.6);
-  --eight-seventy: rgba(2, 48, 89, 0.7);
-  --eight-eighty: rgba(2, 48, 89, 0.8);
-  --eight-ninety: rgba(2, 48, 89, 0.9);
+  /* indigo-950  */
+  --eight: rgba(15, 23, 42, 1);
+  --eight-ten: rgba(15, 23, 42, 0.1);
+  --eight-twenty: rgba(15, 23, 42, 0.2);
+  --eight-thirty: rgba(15, 23, 42, 0.3);
+  --eight-forty: rgba(15, 23, 42, 0.4);
+  --eight-fifty: rgba(15, 23, 42, 0.5);
+  --eight-sixty: rgba(15, 23, 42, 0.6);
+  --eight-seventy: rgba(15, 23, 42, 0.7);
+  --eight-eighty: rgba(15, 23, 42, 0.8);
+  --eight-ninety: rgba(15, 23, 42, 0.9);
 
-  --nine: rgba(42, 47, 86, 1);
-  --nine-ten: rgba(42, 47, 86, 0.1);
-  --nine-twenty: rgba(42, 47, 86, 0.2);
-  --nine-thirty: rgba(42, 47, 86, 0.3);
-  --nine-forty: rgba(42, 47, 86, 0.4);
-  --nine-fifty: rgba(42, 47, 86, 0.5);
-  --nine-sixty: rgba(42, 47, 86, 0.6);
-  --nine-seventy: rgba(42, 47, 86, 0.7);
-  --nine-eighty: rgba(42, 47, 86, 0.8);
-  --nine-ninety: rgba(42, 47, 86, 0.9);
+  /* slate-900  */
+  --nine: rgba(15, 23, 42, 1);
+  --nine-ten: rgba(15, 23, 42, 0.1);
+  --nine-twenty: rgba(15, 23, 42, 0.2);
+  --nine-thirty: rgba(15, 23, 42, 0.3);
+  --nine-forty: rgba(15, 23, 42, 0.4);
+  --nine-fifty: rgba(15, 23, 42, 0.5);
+  --nine-sixty: rgba(15, 23, 42, 0.6);
+  --nine-seventy: rgba(15, 23, 42, 0.7);
+  --nine-eighty: rgba(15, 23, 42, 0.8);
+  --nine-ninety: rgba(15, 23, 42, 0.9);
 
   /* SCREENS  */
   --sz-mobile: 360px;
@@ -197,25 +203,39 @@
   --txtglow900xxl: 0vh 0vh 0.9vh var(--nine);
 
   /* SPACING  */
-  --xxxs: 0.2vh;
-  --xxs: 0.3vh;
+  --xs3: 0.2vh;
+  --xs2: 0.3vh;
   --xs: 0.5vh;
   --sm: 0.7vh;
   --md: 1vh;
   --lg: 1.5vh;
   --xl: 2vh;
-  --xxl: 2.5vh;
-  --xxxl: 3vh;
-  --xxxxl: 3.5vh;
-  --xxxxxl: 4vh;
-  --xxxxxxl: 4.5vh;
-  --xxxxxxxl: 5vh;
+  --xl2: 2.5vh;
+  --xl3: 3vh;
+  --xl4: 3.5vh;
+  --xl5: 4vh;
+  --xl6: 4.5vh;
+  --xl7: 5vh;
+
+  /* FONT SIZES  */
+  --txt-xxs: 1.2vh;
+  --txt-xs: 1.5vh;
+  --txt-sm: 1.7vh;
+  --txt-md: 2vh;
+  --txt-lg: 2.4vh;
+  --txt-xl: 2.8vh;
+  --txt-2xl: 3vh;
+  --txt-3xl: 3.3vh;
+  --txt-4xl: 3.6vh;
+  --txt-5xl: 4vh;
+  --txt-6xl: 4.5vh;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  border-radius: 1.3vh;
 }
 
 body {
@@ -228,6 +248,7 @@ body {
   color: var(--nine);
   font-size: var(--txt-md);
   background-color: var(--nine);
+  font-family: "Prompt", sans-serif;
 }
 
 .button {
@@ -259,7 +280,7 @@ h1 {
   font-size: 5.5vh;
   line-height: 1.1;
   font-weight: 600;
-  color: var(--one);
+  color: var(--three);
   text-shadow: var(--txtshadowmd);
 }
 
@@ -267,7 +288,7 @@ h2 {
   font-size: 4.5vh;
   line-height: 1.1;
   font-weight: 600;
-  color: var(--one);
+  color: var(--three);
   text-shadow: var(--txtshadowmd);
 }
 
@@ -275,7 +296,7 @@ h3 {
   font-size: 3.5vh;
   line-height: 1.1;
   font-weight: 600;
-  color: var(--one);
+  color: var(--three);
   text-shadow: var(--txtshadowmd);
 }
 
@@ -283,7 +304,7 @@ h4 {
   font-size: 2.5vh;
   line-height: 1.1;
   font-weight: 600;
-  color: var(--one);
+  color: var(--three);
   text-shadow: var(--txtshadowmd);
 }
 
@@ -291,7 +312,7 @@ h5 {
   font-size: 2vh;
   line-height: 1.1;
   font-weight: 600;
-  color: var(--one);
+  color: var(--three);
   text-shadow: var(--txtshadowmd);
 }
 
@@ -679,6 +700,7 @@ h5 {
 .flexfull {
   display: flex;
   width: 100%;
+  flex-direction: row;
 }
 
 .centerfull {
@@ -705,47 +727,426 @@ h5 {
   flex-wrap: wrap;
 }
 
-/* PROJECT SPECIFIC CUSTOM COMPONENT CLASSES  */
-
-.colortheme {
-  display: flex;
-  padding: 1vh 2vh;
-  border-radius: var(--md);
-  text-wrap: nowrap;
-  box-shadow: var(--shadowmd);
+.gap-xs3 {
+  gap: var(--xs3);
 }
 
-.simple-container {
-  display: flex;
-  padding: var(--md);
-  background-color: var(--three);
-  width: fit-content;
-  box-shadow: var(--shadowlg);
+.gap-xs2 {
+  gap: var(--xs2);
 }
 
-.container-one {
-  background-color: var(--six);
-  border: var(--xxxs) solid var(--two);
-  color: var(--one);
-  border-radius: var(--md);
-  padding: var(--md);
-  box-shadow: var(--shadowmd);
+.gap-xs {
+  gap: var(--xs);
 }
 
-.container-two {
-  background-color: var(--seven);
-  border: var(--xxxs) solid var(--four);
-  color: var(--one);
-  border-radius: var(--md);
-  padding: var(--md);
-  box-shadow: var(--shadowmd);
+.gap-sm {
+  gap: var(--sm);
 }
 
-.container-three {
-  border: var(--xxxs) solid var(--three);
-  background-color: var(--eight);
-  border-radius: var(--md);
-  color: var(--one);
+.gap-md {
+  gap: var(--md);
+}
+
+.gap-lg {
+  gap: var(--lg);
+}
+
+.gap-xl {
+  gap: var(--xl);
+}
+
+.gap-xl2 {
+  gap: var(--xl2);
+}
+
+.gap-xl3 {
+  gap: var(--xl3);
+}
+
+.gap-xl4 {
+  gap: var(--xl4);
+}
+
+.gap-xl5 {
+  gap: var(--xl5);
+}
+
+.gap-xl6 {
+  gap: var(--xl6);
+}
+
+.gap-xl7 {
+  gap: var(--xl7);
+}
+
+.p-xs3 {
+  padding: var(--xs3);
+}
+
+.p-xs2 {
+  padding: var(--xs2);
+}
+
+.p-xs {
+  padding: var(--xs);
+}
+
+.p-sm {
+  padding: var(--sm);
+}
+
+.p-md {
   padding: var(--md);
-  box-shadow: var(--shadowmd);
+}
+
+.p-lg {
+  padding: var(--lg);
+}
+
+.p-xl {
+  padding: var(--xl);
+}
+
+.p-xl2 {
+  padding: var(--xl2);
+}
+
+.p-xl3 {
+  padding: var(--xl3);
+}
+
+.p-xl4 {
+  padding: var(--xl4);
+}
+
+.p-xl5 {
+  padding: var(--xl5);
+}
+
+.p-xl6 {
+  padding: var(--xl6);
+}
+
+.p-xl7 {
+  padding: var(--xl7);
+}
+
+.w-5vh {
+  width: 5vh;
+}
+
+.w-10vh {
+  width: 10vh;
+}
+
+.w-15vh {
+  width: 15vh;
+}
+
+.w-20vh {
+  width: 20vh;
+}
+
+.w-25vh {
+  width: 25vh;
+}
+
+.w-30vh {
+  width: 30vh;
+}
+
+.w-35vh {
+  width: 35vh;
+}
+
+.w-40vh {
+  width: 40vh;
+}
+
+.w-45vh {
+  width: 45vh;
+}
+
+.w-50vh {
+  width: 50vh;
+}
+
+.w-55vh {
+  width: 55vh;
+}
+
+.w-60vh {
+  width: 60vh;
+}
+
+.w-65vh {
+  width: 65vh;
+}
+
+.w-70vh {
+  width: 70vh;
+}
+
+.w-75vh {
+  width: 75vh;
+}
+
+.w-80vh {
+  width: 80vh;
+}
+
+.w-85vh {
+  width: 85vh;
+}
+
+.w-90vh {
+  width: 90vh;
+}
+
+.w-95vh {
+  width: 95vh;
+}
+
+.w-100vh {
+  width: 100vh;
+}
+
+.w-5vw {
+  width: 5vw;
+}
+
+.w-10vw {
+  width: 10vw;
+}
+
+.w-15vw {
+  width: 15vw;
+}
+
+.w-20vw {
+  width: 20vw;
+}
+
+.w-25vw {
+  width: 25vw;
+}
+
+.w-30vw {
+  width: 30vw;
+}
+
+.w-35vw {
+  width: 35vw;
+}
+
+.w-40vw {
+  width: 40vw;
+}
+
+.w-45vw {
+  width: 45vw;
+}
+
+.w-50vw {
+  width: 50vw;
+}
+
+.w-55vw {
+  width: 55vw;
+}
+
+.w-60vw {
+  width: 60vw;
+}
+
+.w-65vw {
+  width: 65vw;
+}
+
+.w-70vw {
+  width: 70vw;
+}
+
+.w-75vw {
+  width: 75vw;
+}
+
+.w-80vw {
+  width: 80vw;
+}
+
+.w-85vw {
+  width: 85vw;
+}
+
+.w-90vw {
+  width: 90vw;
+}
+
+.w-95vw {
+  width: 95vw;
+}
+
+.w-100vw {
+  width: 100vw;
+}
+
+.h-5vh {
+  height: 5vh;
+}
+
+.h-10vh {
+  height: 10vh;
+}
+
+.h-15vh {
+  height: 15vh;
+}
+
+.h-20vh {
+  height: 20vh;
+}
+
+.h-25vh {
+  height: 25vh;
+}
+
+.h-30vh {
+  height: 30vh;
+}
+
+.h-35vh {
+  height: 35vh;
+}
+
+.h-40vh {
+  height: 40vh;
+}
+
+.h-45vh {
+  height: 45vh;
+}
+
+.h-50vh {
+  height: 50vh;
+}
+
+.h-55vh {
+  height: 55vh;
+}
+
+.h-60vh {
+  height: 60vh;
+}
+
+.h-65vh {
+  height: 65vh;
+}
+
+.h-70vh {
+  height: 70vh;
+}
+
+.h-75vh {
+  height: 75vh;
+}
+
+.h-80vh {
+  height: 80vh;
+}
+
+.h-85vh {
+  height: 85vh;
+}
+
+.h-90vh {
+  height: 90vh;
+}
+
+.h-95vh {
+  height: 95vh;
+}
+
+.h-100vh {
+  height: 100vh;
+}
+
+.h-5vw {
+  height: 5vw;
+}
+
+.h-10vw {
+  height: 10vw;
+}
+
+.h-15vw {
+  height: 15vw;
+}
+
+.h-20vw {
+  height: 20vw;
+}
+
+.h-25vw {
+  height: 25vw;
+}
+
+.h-30vw {
+  height: 30vw;
+}
+
+.h-35vw {
+  height: 35vw;
+}
+
+.h-40vw {
+  height: 40vw;
+}
+
+.h-45vw {
+  height: 45vw;
+}
+
+.h-50vw {
+  height: 50vw;
+}
+
+.h-55vw {
+  height: 55vw;
+}
+
+.h-60vw {
+  height: 60vw;
+}
+
+.h-65vw {
+  height: 65vw;
+}
+
+.h-70vw {
+  height: 70vw;
+}
+
+.h-75vw {
+  height: 75vw;
+}
+
+.h-80vw {
+  height: 80vw;
+}
+
+.h-85vw {
+  height: 85vw;
+}
+
+.h-90vw {
+  height: 90vw;
+}
+
+.h-95vw {
+  height: 95vw;
+}
+
+.h-100vw {
+  height: 100vw;
 }
