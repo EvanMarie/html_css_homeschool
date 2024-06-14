@@ -54,22 +54,23 @@
 
 <body class="bg-indigo-900">
     <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    <!-- -------------------------- MAIN PAGE -------------------------- -->
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- -------------------------- MAIN CONTENT -------------------------- -->
     <div class="page-container py-xl7">
-
         <div class="flexfull px-sm justify-center">
-            <h1 class="text-4xl text-center my-8">ENGLISH INDEX</h1>
+            <h1 id="class-title" class="text-4xl text-center my-8">Class Title</h1>
         </div>
         <div class="flexfull justify-center">
             <div class="vstack gap-md w-30vh">
-
+                <p id="class-day" class="text-center text-white">Class Day</p>
+                <p id="class-description" class="text-center text-white">Description</p>
             </div>
         </div>
     </div>
 
-    <script src=""></script>
+    <script src="../data/english-data.js"></script>
+    <script src="../js/populate-english.js"></script>
 </body>
 
 </html>

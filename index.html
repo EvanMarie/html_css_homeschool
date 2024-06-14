@@ -57,16 +57,20 @@
     <!-- -------------------------- MAIN PAGE -------------------------- -->
     <div class="page-container py-xl7">
         <div class="flexfull px-sm justify-center">
-            <h1 class="text-4xl text-center my-8">MAIN INDEX</h1>
+            <h1 class="text-4xl text-center my-8">Select Class Day</h1>
         </div>
         <div class="flexfull justify-center">
             <div class="vstack gap-md w-30vh">
-
+                <select id="daySelector" class="p-2 rounded">
+                    <!-- Options will be populated dynamically -->
+                </select>
             </div>
         </div>
     </div>
 
-    <script src="js/nav.js"></script>
+    <!-- Ensure these paths are correct -->
+    <script src="../data/english-data.js"></script>
+    <script src="../js/populate-index.js"></script>
 </body>
 
 </html>
